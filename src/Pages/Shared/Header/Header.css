@@ -1,0 +1,19 @@
+.navbar {
+    background: #ec3642;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.navbar .store-name{
+    font-size: 30px;
+}
+
+.navbar-dark .navbar-collapse .nav-link {
+    color: #fff;
+    margin-top: 8px;
+    font-size: 18px;
+}
+
+
+.navbar-dark .navbar-collapse .nav-link:hover {
+    background: white;
+    color: #ec3642 ;
+}

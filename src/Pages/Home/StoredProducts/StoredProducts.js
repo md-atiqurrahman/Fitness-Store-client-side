@@ -5,7 +5,7 @@ import img from '../../../images/Products/chair.png';
 const StoredProducts = () => {
     return (
         <div className='stored-products text-center'>
-            <p className='sub-title'>MADE THE HARD WAY</p>
+            <p className='sub-title'>EXPLORE</p>
             <h1 className='title'>Our Stored Products</h1>
             <div className='horizontal-line d-flex justify-content-center align-items-stretch '>
                 <hr />
@@ -16,10 +16,10 @@ const StoredProducts = () => {
                 <div className='card-container'>
                     <img src={img} alt="" />
                     <div className='product-details'>
-                        <h6>Name: Chair</h6>
+                        <h5>Name: Chair</h5>
                         <p>This chair is very wellBuild Chair and quality is international type</p>
-                        <p>Price: <span style={{color: '#003300'}}>$150</span></p>
-                        <p>Quantity: <span style={{color: '#003300'}}>5</span></p>
+                        <p>Price: <span style={{color: '#ec3642'}}>$150</span></p>
+                        <p>Quantity: <span style={{color: '#ec3642'}}>5</span></p>
                         <p>Supplier name: acesporter</p>
                         <button>Stock update</button>
                     </div>
@@ -27,10 +27,10 @@ const StoredProducts = () => {
                 <div className='card-container'>
                     <img src={img} alt="" />
                     <div className='product-details'>
-                        <h6>Name: Chair</h6>
+                        <h5>Name: Chair</h5>
                         <p>This chair is very wellBuild Chair and quality is international type</p>
-                        <p>Price: <span style={{color: '#003300'}}>$150</span></p>
-                        <p>Quantity: <span style={{color: '#003300'}}>5</span></p>
+                        <p>Price: <span style={{color: '#ec3642'}}>$150</span></p>
+                        <p>Quantity: <span style={{color: '#ec3642'}}>5</span></p>
                         <p>Supplier name: acesporter</p>
                         <button>Stock update</button>
                     </div>
@@ -38,10 +38,10 @@ const StoredProducts = () => {
                 <div className='card-container'>
                     <img src={img} alt="" />
                     <div className='product-details'>
-                        <h6>Name: Chair</h6>
+                        <h5>Name: Chair</h5>
                         <p>This chair is very wellBuild Chair and quality is international type</p>
-                        <p>Price: <span style={{color: '#003300'}}>$150</span></p>
-                        <p>Quantity: <span style={{color: '#003300'}}>5</span></p>
+                        <p>Price: <span style={{color: '#ec3642'}}>$150</span></p>
+                        <p>Quantity: <span style={{color: '#ec3642'}}>5</span></p>
                         <p>Supplier name: acesporter</p>
                         <button>Stock update</button>
                     </div>
@@ -49,10 +49,10 @@ const StoredProducts = () => {
                 <div className='card-container'>
                     <img src={img} alt="" />
                     <div className='product-details'>
-                        <h6>Name: Chair</h6>
+                        <h5>Name: Chair</h5>
                         <p>This chair is very wellBuild Chair and quality is international type</p>
-                        <p>Price: <span style={{color: '#003300'}}>$150</span></p>
-                        <p>Quantity: <span style={{color: '#003300'}}>5</span></p>
+                        <p>Price: <span style={{color: '#ec3642'}}>$150</span></p>
+                        <p>Quantity: <span style={{color: '#ec3642'}}>5</span></p>
                         <p>Supplier name: acesporter</p>
                         <button>Stock update</button>
                     </div>
@@ -60,10 +60,10 @@ const StoredProducts = () => {
                 <div className='card-container'>
                     <img src={img} alt="" />
                     <div className='product-details'>
-                        <h6>Name: Chair</h6>
+                        <h5>Name: Chair</h5>
                         <p>This chair is very wellBuild Chair and quality is international type</p>
-                        <p>Price: <span style={{color: '#003300'}}>$150</span></p>
-                        <p>Quantity: <span style={{color: '#003300'}}>5</span></p>
+                        <p>Price: <span style={{color: '#ec3642'}}>$150</span></p>
+                        <p>Quantity: <span style={{color: '#ec3642'}}>5</span></p>
                         <p>Supplier name: acesporter</p>
                         <button>Stock update</button>
                     </div>
@@ -71,10 +71,10 @@ const StoredProducts = () => {
                 <div className='card-container'>
                     <img src={img} alt="" />
                     <div className='product-details'>
-                        <h6>Name: Chair</h6>
+                        <h5>Name: Chair</h5>
                         <p>This chair is very wellBuild Chair and quality is international type</p>
-                        <p>Price: <span style={{color: '#003300'}}>$150</span></p>
-                        <p>Quantity: <span style={{color: '#003300'}}>5</span></p>
+                        <p>Price: <span style={{color: '#ec3642'}}>$150</span></p>
+                        <p>Quantity: <span style={{color: '#ec3642'}}>5</span></p>
                         <p>Supplier name: acesporter</p>
                         <button>Stock update</button>
                     </div>

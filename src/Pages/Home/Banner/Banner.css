@@ -44,3 +44,6 @@
     margin-bottom: 90px;
     border:none;
 }
+.banner-btn:hover{
+    background: #c5535b;
+}

@@ -1,0 +1,31 @@
+.new-products{
+    margin-top: 100px;
+}
+.new-products h2{
+    font-weight: bolder;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+.new-products p{
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 36px;
+    color: #1d1d1d;
+}
+.new-products-container{
+    display: grid;
+    grid-template-columns: 360px 360px 360px;
+    grid-gap: 20px;
+   justify-content: center;
+}
+.product-container{
+    display: flex;
+    align-items: center;
+}
+.product-container img{
+    width: 157px;
+}
+.product-container .product-info{
+    margin-left: 25px;
+    color: #494949;
+}

@@ -29,19 +29,8 @@ const StoredProducts = () => {
                     <div className='product-details'>
                         <h6>Name: Chair</h6>
                         <p>This chair is very wellBuild Chair and quality is international type</p>
-                        <p>Price: $150</p>
-                        <p>Quantity: 5</p>
-                        <p>Supplier name: acesporter</p>
-                        <button >Stock update</button>
-                    </div>
-                </div>
-                <div className='card-container'>
-                    <img src={img} alt="" />
-                    <div className='product-details'>
-                        <h6>Name: Chair</h6>
-                        <p>This chair is very wellBuild Chair and quality is international type</p>
-                        <p>Price: $150</p>
-                        <p>Quantity: 5</p>
+                        <p>Price: <span style={{color: '#003300'}}>$150</span></p>
+                        <p>Quantity: <span style={{color: '#003300'}}>5</span></p>
                         <p>Supplier name: acesporter</p>
                         <button>Stock update</button>
                     </div>
@@ -51,8 +40,8 @@ const StoredProducts = () => {
                     <div className='product-details'>
                         <h6>Name: Chair</h6>
                         <p>This chair is very wellBuild Chair and quality is international type</p>
-                        <p>Price: $150</p>
-                        <p>Quantity: 5</p>
+                        <p>Price: <span style={{color: '#003300'}}>$150</span></p>
+                        <p>Quantity: <span style={{color: '#003300'}}>5</span></p>
                         <p>Supplier name: acesporter</p>
                         <button>Stock update</button>
                     </div>
@@ -62,8 +51,8 @@ const StoredProducts = () => {
                     <div className='product-details'>
                         <h6>Name: Chair</h6>
                         <p>This chair is very wellBuild Chair and quality is international type</p>
-                        <p>Price: $150</p>
-                        <p>Quantity: 5</p>
+                        <p>Price: <span style={{color: '#003300'}}>$150</span></p>
+                        <p>Quantity: <span style={{color: '#003300'}}>5</span></p>
                         <p>Supplier name: acesporter</p>
                         <button>Stock update</button>
                     </div>
@@ -73,8 +62,19 @@ const StoredProducts = () => {
                     <div className='product-details'>
                         <h6>Name: Chair</h6>
                         <p>This chair is very wellBuild Chair and quality is international type</p>
-                        <p>Price: $150</p>
-                        <p>Quantity: 5</p>
+                        <p>Price: <span style={{color: '#003300'}}>$150</span></p>
+                        <p>Quantity: <span style={{color: '#003300'}}>5</span></p>
+                        <p>Supplier name: acesporter</p>
+                        <button>Stock update</button>
+                    </div>
+                </div>
+                <div className='card-container'>
+                    <img src={img} alt="" />
+                    <div className='product-details'>
+                        <h6>Name: Chair</h6>
+                        <p>This chair is very wellBuild Chair and quality is international type</p>
+                        <p>Price: <span style={{color: '#003300'}}>$150</span></p>
+                        <p>Quantity: <span style={{color: '#003300'}}>5</span></p>
                         <p>Supplier name: acesporter</p>
                         <button>Stock update</button>
                     </div>

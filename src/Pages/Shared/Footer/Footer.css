@@ -1,3 +1,35 @@
 .footer{
     background: #1d1d1d;
 }
+.footer .copyright-info{
+    padding-bottom: 35px;
+}
+.footer .copyright-info p{
+    color: #999999;
+}
+.footer .store-info p{
+    color: #999999;
+}
+.footer button{
+    background: #1d1d1d;
+    color: white;
+    font-size: 32px;
+    font-weight: bolder;
+    font-style: italic;
+    border: 2px solid white;
+    margin-bottom: 20px;
+}
+.footer .information h5{
+    font-weight: bolder;
+    font-style: italic;
+}
+.footer .information p{
+    color: #999999;
+}
+.footer .support p{
+    font-weight: 500;
+    color: white;
+}
+.footer .support p .under-text{
+    color: #999999;
+}

@@ -1,84 +1,36 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import StoredProduct from '../Home/StoredProduct/StoredProduct';
 import './StoredProducts.css';
-import img from '../../../images/Products/chair.png';
 
 const StoredProducts = () => {
+    const [storedProducts, setStoredProducts] = useState([]);
+
+
+    useEffect(() => {
+        fetch('items.json')
+            .then(res => res.json())
+            .then(data => setStoredProducts(data))
+    }, [])
+
+    const selectedProducts = storedProducts.filter(product => product.price < 800)
+
     return (
         <div className='stored-products text-center'>
             <p className='sub-title'>EXPLORE</p>
-            <h1 className='title'>Our Stored Products</h1>
+            <h1 className='title'>Our Inventory Items</h1>
             <div className='horizontal-line d-flex justify-content-center align-items-stretch '>
                 <hr />
                 <p className='hr-text mx-2'>X</p>
                 <hr />
             </div>
             <div className='products-container '>
-                <div className='card-container'>
-                    <img src={img} alt="" />
-                    <div className='product-details'>
-                        <h5>Name: Chair</h5>
-                        <p>This chair is very wellBuild Chair and quality is international type</p>
-                        <p>Price: <span style={{color: '#ec3642'}}>$150</span></p>
-                        <p>Quantity: <span style={{color: '#ec3642'}}>5</span></p>
-                        <p>Supplier name: acesporter</p>
-                        <button>Stock update</button>
-                    </div>
-                </div>
-                <div className='card-container'>
-                    <img src={img} alt="" />
-                    <div className='product-details'>
-                        <h5>Name: Chair</h5>
-                        <p>This chair is very wellBuild Chair and quality is international type</p>
-                        <p>Price: <span style={{color: '#ec3642'}}>$150</span></p>
-                        <p>Quantity: <span style={{color: '#ec3642'}}>5</span></p>
-                        <p>Supplier name: acesporter</p>
-                        <button>Stock update</button>
-                    </div>
-                </div>
-                <div className='card-container'>
-                    <img src={img} alt="" />
-                    <div className='product-details'>
-                        <h5>Name: Chair</h5>
-                        <p>This chair is very wellBuild Chair and quality is international type</p>
-                        <p>Price: <span style={{color: '#ec3642'}}>$150</span></p>
-                        <p>Quantity: <span style={{color: '#ec3642'}}>5</span></p>
-                        <p>Supplier name: acesporter</p>
-                        <button>Stock update</button>
-                    </div>
-                </div>
-                <div className='card-container'>
-                    <img src={img} alt="" />
-                    <div className='product-details'>
-                        <h5>Name: Chair</h5>
-                        <p>This chair is very wellBuild Chair and quality is international type</p>
-                        <p>Price: <span style={{color: '#ec3642'}}>$150</span></p>
-                        <p>Quantity: <span style={{color: '#ec3642'}}>5</span></p>
-                        <p>Supplier name: acesporter</p>
-                        <button>Stock update</button>
-                    </div>
-                </div>
-                <div className='card-container'>
-                    <img src={img} alt="" />
-                    <div className='product-details'>
-                        <h5>Name: Chair</h5>
-                        <p>This chair is very wellBuild Chair and quality is international type</p>
-                        <p>Price: <span style={{color: '#ec3642'}}>$150</span></p>
-                        <p>Quantity: <span style={{color: '#ec3642'}}>5</span></p>
-                        <p>Supplier name: acesporter</p>
-                        <button>Stock update</button>
-                    </div>
-                </div>
-                <div className='card-container'>
-                    <img src={img} alt="" />
-                    <div className='product-details'>
-                        <h5>Name: Chair</h5>
-                        <p>This chair is very wellBuild Chair and quality is international type</p>
-                        <p>Price: <span style={{color: '#ec3642'}}>$150</span></p>
-                        <p>Quantity: <span style={{color: '#ec3642'}}>5</span></p>
-                        <p>Supplier name: acesporter</p>
-                        <button>Stock update</button>
-                    </div>
-                </div>
+                {
+                    selectedProducts.map(product => <StoredProduct
+                                key={product._id}
+                                product={product}
+                            ></StoredProduct>
+                    )
+                }
             </div>
         </div>
     );

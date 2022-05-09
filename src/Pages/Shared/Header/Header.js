@@ -16,7 +16,7 @@ const Header = () => {
                     </div>
                     <div className='d-lg-flex'>
                         <Nav.Link href="#deets">ABOUT</Nav.Link>
-                        <Nav.Link eventKey={2} href="#memes">
+                        <Nav.Link eventKey={2} as={Link} to="/login">
                             LOGIN
                         </Nav.Link>
                     </div>

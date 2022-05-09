@@ -21,7 +21,7 @@ const NewProducts = () => {
                     </div>
                     <div className='product-info'>
                         <h5>Gym equipment Bag</h5>
-                        <h5><small>Quantity: <span style={{ color: '#ec3642' }}>10</span></small></h5>
+                        <h5><small>Quantity: <span style={{ color: '#ec3642' }}>114</span></small></h5>
                         <h5 style={{ color: '#ec3642' }}>$21.48-$23.99</h5>
                     </div>
                 </div>
@@ -31,7 +31,7 @@ const NewProducts = () => {
                     </div>
                     <div className='product-info'>
                         <h5>Flexiable Stress Chair</h5>
-                        <h5><small>Quantity: <span style={{ color: '#ec3642' }}>3</span></small></h5>
+                        <h5><small>Quantity: <span style={{ color: '#ec3642' }}>139</span></small></h5>
                         <h5 style={{ color: '#ec3642' }}>$35.79-$39.04</h5>
                     </div>
                 </div>
@@ -41,7 +41,7 @@ const NewProducts = () => {
                     </div>
                     <div className='product-info'>
                         <h5>Punching Hand Gloves</h5>
-                        <h5><small>Quantity: <span style={{ color: '#ec3642' }}>11</span></small></h5>
+                        <h5><small>Quantity: <span style={{ color: '#ec3642' }}>156</span></small></h5>
                         <h5 style={{ color: '#ec3642' }}>$15.67-$17.25</h5>
                     </div>
                 </div>
@@ -51,7 +51,7 @@ const NewProducts = () => {
                     </div>
                     <div className='product-info'>
                         <h5>Electrical 3hp LCD Machine</h5>
-                        <h5><small>Quantity: <span style={{ color: '#ec3642' }}>5</span></small></h5>
+                        <h5><small>Quantity: <span style={{ color: '#ec3642' }}>255</span></small></h5>
                         <h5 style={{ color: '#ec3642' }}>$511.99-$523.31</h5>
                     </div>
                 </div>
@@ -61,7 +61,7 @@ const NewProducts = () => {
                     </div>
                     <div className='product-info'>
                         <h5>Custom Sand Gym Punch Bags Man Leather</h5>
-                        <h5><small>Quantity: <span style={{ color: '#ec3642' }}>13</span></small></h5>
+                        <h5><small>Quantity: <span style={{ color: '#ec3642' }}>173</span></small></h5>
                         <h5 style={{ color: '#ec3642' }}>$284.52-$297.56</h5>
                     </div>
                 </div>
@@ -71,7 +71,7 @@ const NewProducts = () => {
                     </div>
                     <div className='product-info'>
                         <h5>Boxing Speed Ball Pear Shape PU</h5>
-                        <h5><small>Quantity: <span style={{ color: '#ec3642' }}>19</span></small></h5>
+                        <h5><small>Quantity: <span style={{ color: '#ec3642' }}>189</span></small></h5>
                         <h5 style={{ color: '#ec3642' }}>$8.43-$13.34</h5>
                     </div>
                 </div>

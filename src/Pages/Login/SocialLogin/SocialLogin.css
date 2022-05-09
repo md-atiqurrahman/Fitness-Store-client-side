@@ -1,0 +1,10 @@
+.social-login{
+    border: 1px solid #ec3642;
+    width: 40%;
+    margin: 0 auto;
+    padding: 5px;
+    cursor: pointer;
+}
+.social-login .signin-text{
+   margin-left: 10px;
+}

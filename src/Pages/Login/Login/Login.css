@@ -1,0 +1,27 @@
+form .submit-btn{
+    background: #ec3642;
+    border: none;
+    color: white;
+    padding: 5px;
+    width: 50%;
+    margin: 0 auto;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+form .submit-btn:hover{
+    background: #eea0a6;
+}
+
+.horizontal-line{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    margin-bottom: 10px;
+} 
+.horizontal-line hr{
+    width: 17%;
+}
+.horizontal-line p{
+    margin: 2px 8px 0;
+}

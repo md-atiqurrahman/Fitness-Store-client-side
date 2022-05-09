@@ -10,7 +10,7 @@ import image6 from '../../../images/Suppliers/brand7.png';
 const Suppliers = () => {
     return (
         <div className='suppliers'>
-            <h2>Our Suppliers Brands</h2>
+            <h2>Our Manufacturer Brands</h2>
             <div className='logo-container'>
                 <div>
                     <img src={image1} alt="" />

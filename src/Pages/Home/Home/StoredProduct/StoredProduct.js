@@ -1,7 +1,8 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const StoredProduct = ({product}) => {
-    const {image,name,description,price,quantity,supplierName} = product;
+    const {_id,image,name,description,price,quantity,supplierName} = product;
     return (
         <div className='card-container'>
             <img src={image} alt="" />
@@ -11,7 +12,7 @@ const StoredProduct = ({product}) => {
                 <p>Price: <span style={{ color: '#ec3642' }}>${price}</span></p>
                 <p>Quantity: <span style={{ color: '#ec3642' }}>{quantity}</span></p>
                 <p>Supplier name: {supplierName}</p>
-                <button>Stock update</button>
+                <Link to={`/inventory/${_id}`}><button>Stock update</button></Link>
             </div>
         </div>
     );

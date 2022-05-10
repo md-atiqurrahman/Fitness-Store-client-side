@@ -66,7 +66,7 @@ const Footer = () => {
                         <FontAwesomeIcon style={{ marginRight: '20px', fontSize: '25px', color: '#999999' }} icon={faTruckFast} />
                         <p>
                             Free Shipping <br />
-                            <span className='under-text' >Free shipping on all US order</span>
+                            <span className='under-text' >Free shipping on all delivery</span>
                         </p>
                     </div>
                     <div className='d-flex'>

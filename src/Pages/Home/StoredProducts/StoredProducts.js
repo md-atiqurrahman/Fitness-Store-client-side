@@ -1,16 +1,10 @@
 import React, { useEffect, useState } from 'react';
+import useStoredProducts from '../../../hooks/useStoredProducts';
 import StoredProduct from '../Home/StoredProduct/StoredProduct';
 import './StoredProducts.css';
 
 const StoredProducts = () => {
-    const [storedProducts, setStoredProducts] = useState([]);
-
-
-    useEffect(() => {
-        fetch('items.json')
-            .then(res => res.json())
-            .then(data => setStoredProducts(data))
-    }, [])
+    const [storedProducts, setStoredProducts] = useStoredProducts();
 
     const selectedProducts = storedProducts.filter(product => product.price < 800)
 

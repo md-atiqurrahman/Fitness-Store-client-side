@@ -8,7 +8,7 @@
     background-position: center;
     background-size: cover;
     width: 59%;
-    height: 61vh;
+    height: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -20,6 +20,7 @@
 }
 .subscribe .store-details .details-text{
      width: 50%;
+     padding: 85px 0;
 }
 .subscribe .store-details .details-text h1{
     font-size: 62px;
@@ -34,7 +35,7 @@
 }
 .subscribe .subscribe-field{
     width: 41%;
-    height: 61vh;
+    height: 100%;
     background: #ec3642;
     color: white;
 }
@@ -46,7 +47,7 @@
     font-style: italic;
     font-size: 34px;
     font-weight: 400;
-    margin-bottom: 0;
+    
 }
 .subscribe-details h1{
     font-size: 68px;
@@ -60,8 +61,8 @@
     margin-top: -10px;
 }
 .subscribe-details input{
-    margin-bottom: 30px;
-    margin-top: 20px;
+    margin-bottom: 25px;
+    margin-top: 15px;
     width: 67%;
     background: #ec3642;
     border: 1px solid white;
@@ -74,6 +75,7 @@
     padding: 10px 30px;
     border-radius: 50px;
     font-size: 20px;
+    margin-bottom: 20px;
 }
 .subscribe-details button:hover{
     background: #1d1d1d;

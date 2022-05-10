@@ -1,19 +1,47 @@
 import React from 'react';
 import './Login.css';
 import { useForm } from "react-hook-form";
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import SocialLogin from '../SocialLogin/SocialLogin';
+import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { auth } from '../../firebase.init';
+import { Spinner } from 'react-bootstrap';
+import PageTitle from '../../Shared/PageTitle/PageTitle';
+
 
 const Login = () => {
-    const { register, handleSubmit } = useForm();
-    const onSubmit = data => console.log(data);
+    const navigate = useNavigate();
+    const { register, handleSubmit ,reset } = useForm();
+
+    const [
+        signInWithEmailAndPassword,
+        user,
+        loading,
+        error,
+    ] = useSignInWithEmailAndPassword(auth);
+
+    const onSubmit = data =>{
+        reset();
+        const {email,password} = data;
+        signInWithEmailAndPassword(email,password);
+    };
+
+    if(loading){
+        <Spinner animation="border" variant="danger" />
+    }
+
+    if(user){
+        navigate('/home');
+    }
 
     return (
         <div className='my-5 w-50 mx-auto'>
+            <PageTitle title={'Login'}></PageTitle>
             <h2 className='text-center mb-3'>Please Login <span style={{ color: '#ec3642' }}>!!</span></h2>
             <form className='w-50 mx-auto d-flex flex-column' onSubmit={handleSubmit(onSubmit)}>
-                <input className='mb-3 w-100' type='email' autoComplete='off' placeholder='Enter your email' {...register("email")} />
-                <input className='mb-3 w-100' type="password" placeholder='Type password' {...register("password")} />
+                <input className='mb-3 w-100' type='email' autoComplete='off' placeholder='Enter your email' required {...register("email")} />
+                <input className='mb-3 w-100' type="password" placeholder='Type password' required {...register("password")} />
+                <p className='text-danger'>{error?.message}</p>
                 <input className='submit-btn' type="submit" value='Login' />
             </form>
             <p className='text-center mt-4 mb-2'>New to Fitness Store ? <Link style={{ textDecoration: 'none', color: '#0969da' }} to='/register'>Please Register</Link></p>

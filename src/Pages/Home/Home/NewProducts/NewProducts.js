@@ -4,7 +4,7 @@ import image1 from '../../../../images/Newproducts/bag.png';
 import image2 from '../../../../images/Newproducts/tool.png';
 import image3 from '../../../../images/Newproducts/gloves.png';
 import image4 from '../../../../images/Newproducts/cycle.png';
-import image5 from '../../../../images/Newproducts/punching box.png';
+import image5 from '../../../../images/Newproducts/chair.png';
 import image6 from '../../../../images/Newproducts/speed box.png';
 
 const NewProducts = () => {
@@ -30,7 +30,7 @@ const NewProducts = () => {
                         <img src={image2} alt="" />
                     </div>
                     <div className='product-info'>
-                        <h5>Flexiable Stress Chair</h5>
+                        <h5>Flexible Stress Tool Red</h5>
                         <h5><small>Quantity: <span style={{ color: '#ec3642' }}>139</span></small></h5>
                         <h5 style={{ color: '#ec3642' }}>$35.79-$39.04</h5>
                     </div>
@@ -60,7 +60,7 @@ const NewProducts = () => {
                         <img src={image5} alt="" />
                     </div>
                     <div className='product-info'>
-                        <h5>Custom Sand Gym Punch Bags Man Leather</h5>
+                        <h5>Flexible Stressing Chair Red</h5>
                         <h5><small>Quantity: <span style={{ color: '#ec3642' }}>173</span></small></h5>
                         <h5 style={{ color: '#ec3642' }}>$284.52-$297.56</h5>
                     </div>

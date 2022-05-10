@@ -6,8 +6,10 @@ import Footer from './Pages/Shared/Footer/Footer';
 import Login from './Pages/Login/Login/Login';
 import Register from './Pages/Login/Register/Register';
 import ManageStock from './Pages/Home/Home/ManageStock/ManageStock';
+import useScrollToTop from './hooks/useScrollToTop';
 
 function App() {
+  useScrollToTop();
   return (
     <div>
       <Header></Header>

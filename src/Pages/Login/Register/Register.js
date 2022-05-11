@@ -1,6 +1,6 @@
 import React from 'react';
 import { useForm } from "react-hook-form";
-import { Link, useNavigate } from 'react-router-dom';
+import { Link,  useNavigate } from 'react-router-dom';
 import SocialLogin from '../SocialLogin/SocialLogin';
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { auth } from '../../firebase.init';
@@ -18,13 +18,12 @@ const Register = () => {
 
 
     const onSubmit = data => {
-        reset();
         const { email, password } = data;
         createUserWithEmailAndPassword(email, password);
-
+        reset();
     }
     if (user) {
-        navigate('/home')
+        navigate('/home') 
     }
 
     return (

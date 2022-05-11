@@ -1,17 +1,20 @@
 import React from 'react';
 import './Login.css';
 import { useForm } from "react-hook-form";
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import SocialLogin from '../SocialLogin/SocialLogin';
 import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { auth } from '../../firebase.init';
-import { Spinner } from 'react-bootstrap';
 import PageTitle from '../../Shared/PageTitle/PageTitle';
 
 
 const Login = () => {
     const navigate = useNavigate();
+    let location = useLocation();
     const { register, handleSubmit ,reset } = useForm();
+
+
+    let from = location.state?.from?.pathname || "/";
 
     const [
         signInWithEmailAndPassword,
@@ -21,17 +24,14 @@ const Login = () => {
     ] = useSignInWithEmailAndPassword(auth);
 
     const onSubmit = data =>{
-        reset();
         const {email,password} = data;
         signInWithEmailAndPassword(email,password);
+        reset();
     };
 
-    if(loading){
-        <Spinner animation="border" variant="danger" />
-    }
 
     if(user){
-        navigate('/home');
+        navigate(from, { replace: true }); 
     }
 
     return (

@@ -1,6 +1,6 @@
 import { signOut } from 'firebase/auth';
 import React from 'react';
-import { Container,  Navbar } from 'react-bootstrap';
+import { Container, Navbar } from 'react-bootstrap';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { Link } from 'react-router-dom';
 import { auth } from '../../firebase.init';
@@ -25,8 +25,20 @@ const Header = () => {
                         <CustomLink as={Link} to="/blogs">Blogs</CustomLink>
                     </div>
                     <div className='d-lg-flex'>
-                        <CustomLink as={Link} to="/about">About</CustomLink>
-                        <CustomLink as={Link} to="/manage">Manage Items</CustomLink>
+                        <CustomLink as={Link} to="/storeRoom">Store Room</CustomLink>
+                        {
+                            user ?
+                                <>
+                                    <CustomLink as={Link} to="/manage">
+                                        Manage Items
+                                    </CustomLink>
+                                    <CustomLink as={Link} to="/addItem">
+                                        Add Item
+                                    </CustomLink>
+                                </>
+                                :
+                                ''
+                        }
                         {
                             user ?
                                 <CustomLink as={Link} to='/login'>

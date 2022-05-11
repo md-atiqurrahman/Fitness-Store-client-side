@@ -1,7 +1,7 @@
 import React from 'react';
 import PageTitle from '../Shared/PageTitle/PageTitle';
 
-const About = () => {
+const StoreRoom = () => {
     return (
         <div>
             <PageTitle title={'About'}></PageTitle>
@@ -10,4 +10,4 @@ const About = () => {
     );
 };
 
-export default About;
+export default StoreRoom;

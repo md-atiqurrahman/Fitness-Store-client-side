@@ -34,7 +34,11 @@ const ManageInventories = () => {
                     </tbody>
                 </Table>
                 <div className='text-center mt-5 mb-5'>
-                    <button className='manage-btn mt-2 mb-3' >Add New Item</button>
+                    <Link to='/addItem'>
+                        <button className='manage-btn mt-2 mb-3' >
+                            Add New Item
+                        </button>
+                    </Link>
                 </div>
             </Container>
         </div>

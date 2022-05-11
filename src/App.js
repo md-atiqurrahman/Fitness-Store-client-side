@@ -10,6 +10,7 @@ import useScrollToTop from './hooks/useScrollToTop';
 import RequireAuth from './Pages/Shared/RequireAuth/RequireAuth';
 import Blogs from './Pages/Blogs/Blogs';
 import About from './Pages/About/About';
+import ManageInventories from './Pages/ManageInventories/ManageInventories';
 
 function App() {
   useScrollToTop();
@@ -23,6 +24,7 @@ function App() {
         <Route path='/about' element={<About></About>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/register' element={<Register></Register>}></Route>
+        <Route path='/manage' element={<ManageInventories></ManageInventories>}></Route>
         <Route path='/inventory/:id' element={
           <RequireAuth>
             <ManageStock></ManageStock>

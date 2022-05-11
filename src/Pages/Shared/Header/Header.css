@@ -10,7 +10,8 @@
 
 .navbar-dark .navbar-collapse .nav-link {
     color: #fff;
-    font-weight: 500;
-    margin-top: 8px;
+    font-weight: bold;
     font-size: 18px;
+    margin-top: 8px;
+    background-color: #a79f9f;
 }

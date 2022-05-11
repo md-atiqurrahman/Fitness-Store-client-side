@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import useStoredProducts from '../../../hooks/useStoredProducts';
 import StoredProduct from '../Home/StoredProduct/StoredProduct';
 import './StoredProducts.css';
@@ -26,6 +27,7 @@ const StoredProducts = () => {
                     )
                 }
             </div>
+            <Link to='/manage'><button className='manage-btn'> Manage Inventories</button></Link>
         </div>
     );
 };

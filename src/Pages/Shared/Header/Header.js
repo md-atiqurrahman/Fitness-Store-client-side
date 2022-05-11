@@ -21,24 +21,25 @@ const Header = () => {
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <div className="me-auto d-lg-flex">
-                        <CustomLink as={Link} to="/home">HOME</CustomLink>
-                        <CustomLink as={Link} to="/blogs">BLOGS</CustomLink>
+                        <CustomLink as={Link} to="/home">Home</CustomLink>
+                        <CustomLink as={Link} to="/blogs">Blogs</CustomLink>
                     </div>
                     <div className='d-lg-flex'>
-                        <CustomLink as={Link} to="/about">ABOUT</CustomLink>
+                        <CustomLink as={Link} to="/about">About</CustomLink>
+                        <CustomLink as={Link} to="/manage">Manage Items</CustomLink>
                         {
                             user ?
                                 <CustomLink as={Link} to='/login'>
                                     <div
                                         onClick={logout}
                                     >
-                                        SIGNOUT
+                                        Logout
                                     </div>
                                 </CustomLink>
                                 :
                                 <CustomLink as={Link} to='/login'>
                                     <div>
-                                        LOGIN
+                                        Login
                                     </div>
                                 </CustomLink>
                         }

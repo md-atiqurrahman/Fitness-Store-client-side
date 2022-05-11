@@ -78,3 +78,17 @@
     border-radius: 5px;
     padding: 10px;
 }
+
+.manage-btn{
+    border: none;
+    border-radius: 3px;
+    font-size: 18px;
+    color: white;
+    background-color: #ec3642;
+    margin-top: 50px;
+    padding: 10px 20px;
+}
+
+.manage-btn:hover{
+    background: #1d1d1d;
+}

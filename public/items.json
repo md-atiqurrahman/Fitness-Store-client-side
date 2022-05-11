@@ -1,6 +1,7 @@
 [
     {
       "_id": "6278bdf73d59710d42597776",
+      "count": 1,
       "image": "https://i.ibb.co/qC0XR9H/product11.png",
       "price": 981,
       "quantity": 53,
@@ -12,6 +13,7 @@
     },
     {
       "_id": "6278bdf74f5532148227a316",
+      "count": 2,
       "image": "https://i.ibb.co/fnPxHNV/product2.png",
       "price": 897,
       "quantity": 77,
@@ -23,6 +25,7 @@
     },
     {
       "_id": "6278bdf702b4a3c05ae1bf6e",
+      "count": 3,
       "image": "https://i.ibb.co/WktC2WW/product4.png",
       "imageBig": "https://i.ibb.co/N7j5sq3/productbig3.png",
       "price": 727,
@@ -35,6 +38,7 @@
     },
     {
       "_id": "6278bdf74e41bcbd05b88af3",
+      "count": 4,
       "image": "https://i.ibb.co/w4CDVgh/product8.png",
       "imageBig": " https://i.ibb.co/J2LWnHw/productbig1.png",
       "price": 711,
@@ -47,10 +51,11 @@
     },
     {
       "_id": "6278bdf72b223110064c5622",
+      "count": 5,
       "image": "https://i.ibb.co/dB8TZFk/product6.png",
       "price": 840,
       "quantity": 162,
-      "name": "Equipment Carrying Bag",
+      "name": "Equipment Carrying Red Bag",
       "supplierName": "DOLIC & GABBANA",
       "description": "It's  color is red and it is a light weight bag for carrying gym equipment. ",
       "category": "Clothing",
@@ -58,6 +63,7 @@
     },
     {
       "_id": "6278bdf70a62fd26fd4633c1",
+      "count": 6,
       "image": "https://i.ibb.co/8gx9hk0/blue-tool.png",
       "imageBig": "https://i.ibb.co/8cLc1rM/productbig2.png",
       "price": 785,
@@ -70,6 +76,7 @@
     },
     {
       "_id": "6278bdf7843ed124496ac6c0",
+      "count": 7,
       "image": " https://i.ibb.co/jL5tzJS/product15.png",
       "price": 871,
       "quantity": 97,
@@ -81,6 +88,7 @@
     },
     {
       "_id": "6278bdf7b6efe7079178b172",
+      "count": 8,
       "image": "https://i.ibb.co/F6CdKdj/product12.png",
       "imageBig": "https://i.ibb.co/fG1PCxN/Trademil.png",
       "price": 729,
@@ -93,6 +101,7 @@
     },
     {
       "_id": "6278bdf7b9180df99145ee59",
+      "count": 9,
       "image": "https://i.ibb.co/5c2T8Zy/product16.png",
       "imageBig": " https://i.ibb.co/qNQYvSk/productbig.png",
       "price": 778,
@@ -105,6 +114,7 @@
     },
     {
       "_id": "6278bdf79057e4528afadd2e",
+      "count": 10,
       "image": "https://i.ibb.co/W6nqyZ7/product13.png",
       "price": 852,
       "quantity": 157,
@@ -116,10 +126,11 @@
     },
     {
       "_id": "6278bdf732cd55b3476cd429",
+      "count": 11,
       "image": "https://i.ibb.co/P5zTh51/product7.png",
       "price": 863,
       "quantity": 197,
-      "name": "Equipment Carring Bag",
+      "name": "Equipment Carring Black Bag",
       "supplierName": "DOLIC & GABBANA",
       "description": "It's  color is Black and it is a light weight bag for carrying gym equipment.",
       "category": "Clothing",
@@ -127,6 +138,7 @@
     },
     {
       "_id": "6278bdf7c81237e06a3c679c",
+      "count": 12,
       "image": "https://i.ibb.co/v1rvnj6/product5.png",
       "imageBig": "https://i.ibb.co/CHv5yXT/productbig5.png",
       "price": 703,

@@ -15,6 +15,7 @@ import AddItem from './Pages/AddItem/AddItem';
 import NotFound from './Pages/Shared/NotFound/NotFound';
 import MyItems from './Pages/MyItems/MyItems/MyItems';
 import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   useScrollToTop();

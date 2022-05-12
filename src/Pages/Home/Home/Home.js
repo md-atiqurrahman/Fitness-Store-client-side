@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import { Spinner } from 'react-bootstrap';
 import PageTitle from '../../Shared/PageTitle/PageTitle';
 import Banner from '../Banner/Banner';
 import StoredProducts from '../StoredProducts/StoredProducts';
@@ -8,16 +9,31 @@ import Subscribe from './Subscribe/Subscribe';
 
 
 const Home = () => {
-    return (
-        <div>
-            <PageTitle title={'Home'}></PageTitle>
-            <Banner></Banner>
-            <StoredProducts></StoredProducts>
-            <NewProducts></NewProducts>
-            <Suppliers></Suppliers>
-            <Subscribe></Subscribe>
+    const [loading, setLoading] = useState(true);
+
+    useEffect(() => {
+        setTimeout(() => {
+            setLoading(false);
+        }, 2000);
+    }, []);
+
+    return loading ?
+        (
+        <div style={{ margin: '300px 0' }} className='text-center'>
+            <Spinner animation="border" variant="secondary" />
         </div>
-    );
+        )
+        :
+        (
+            <div>
+                <PageTitle title={'Home'}></PageTitle >
+                <Banner></Banner>
+                <StoredProducts></StoredProducts>
+                <NewProducts></NewProducts>
+                <Suppliers></Suppliers>
+                <Subscribe></Subscribe>
+            </div >
+        )
 };
 
 export default Home;

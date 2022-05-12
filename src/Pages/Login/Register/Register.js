@@ -6,7 +6,6 @@ import { useCreateUserWithEmailAndPassword, useSendEmailVerification } from 'rea
 import { auth } from '../../firebase.init';
 import { Spinner } from 'react-bootstrap';
 import { toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
 
 const Register = () => {
     const [defaultError, setDefaultError] = useState('');

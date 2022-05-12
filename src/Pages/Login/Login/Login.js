@@ -8,7 +8,6 @@ import { auth } from '../../firebase.init';
 import PageTitle from '../../Shared/PageTitle/PageTitle';
 import { Spinner } from 'react-bootstrap';
 import { toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
 
 
 const Login = () => {

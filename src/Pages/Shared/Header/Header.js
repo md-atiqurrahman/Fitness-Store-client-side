@@ -35,6 +35,9 @@ const Header = () => {
                                     <CustomLink as={Link} to="/addItem">
                                         Add Item
                                     </CustomLink>
+                                    <CustomLink as={Link} to="/myItems">
+                                        My Items
+                                    </CustomLink>
                                 </>
                                 :
                                 ''

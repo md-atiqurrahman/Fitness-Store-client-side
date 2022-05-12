@@ -7,6 +7,7 @@ import ItemDetails from './ItemDetails/ItemDetails';
 
 const ManageInventories = () => {
     const [storedProducts, setStoredProducts] = useStoredProducts();
+
     return (
         <div>
             <PageTitle title={'Manage Items'}></PageTitle>

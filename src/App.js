@@ -13,6 +13,8 @@ import StoreRoom from './Pages/StoreRoom/StoreRoom';
 import ManageInventories from './Pages/ManageInventories/ManageInventories';
 import AddItem from './Pages/AddItem/AddItem';
 import NotFound from './Pages/Shared/NotFound/NotFound';
+import MyItems from './Pages/MyItems/MyItems/MyItems';
+import { ToastContainer } from 'react-toastify';
 
 function App() {
   useScrollToTop();
@@ -27,7 +29,16 @@ function App() {
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/register' element={<Register></Register>}></Route>
         <Route path='/manage' element={<ManageInventories></ManageInventories>}></Route>
-        <Route path='/addItem' element={<AddItem></AddItem>}></Route>
+        <Route path='/addItem' element={
+          <RequireAuth>
+            <AddItem></AddItem>
+          </RequireAuth>
+        }></Route>
+        <Route path='/myItems' element={
+          <RequireAuth>
+            <MyItems></MyItems>
+          </RequireAuth>
+        }></Route>
         <Route path='/inventory/:id' element={
           <RequireAuth>
             <ManageStock></ManageStock>
@@ -36,6 +47,7 @@ function App() {
         <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
       <Footer></Footer>
+      <ToastContainer/>
     </div>
   );
 }

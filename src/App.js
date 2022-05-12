@@ -12,6 +12,7 @@ import Blogs from './Pages/Blogs/Blogs';
 import StoreRoom from './Pages/StoreRoom/StoreRoom';
 import ManageInventories from './Pages/ManageInventories/ManageInventories';
 import AddItem from './Pages/AddItem/AddItem';
+import NotFound from './Pages/Shared/NotFound/NotFound';
 
 function App() {
   useScrollToTop();
@@ -32,6 +33,7 @@ function App() {
             <ManageStock></ManageStock>
           </RequireAuth>
         }></Route>
+        <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
       <Footer></Footer>
     </div>

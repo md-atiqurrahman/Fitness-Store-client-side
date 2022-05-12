@@ -31,9 +31,9 @@ const AddItem = () => {
 
                 <input className='mb-3 w-100' type="text" autoComplete='off' placeholder='Product Count' required {...register("count")} />
 
-                <input className='mb-3 w-100' type="text" autoComplete='off' placeholder='Product Photo Url' required {...register("image")} />
+                <input className='mb-3 w-100' type="text"  value={'https://ibb.co/BB5mVxD'} readOnly {...register("image")} />
 
-                <input className='mb-3 w-100' type="text" autoComplete='off' placeholder='Product Photo Url Big' required {...register("imageBig")} />
+                <input className='mb-3 w-100' type="text" value={'https://ibb.co/6syvvFs'} readOnly {...register("imageBig")} />
 
                 <input className='manage-btn mt-0 mb-5' type="submit" value='Add' />
             </form>

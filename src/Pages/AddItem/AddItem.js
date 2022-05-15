@@ -17,6 +17,7 @@ const AddItem = () => {
             <PageTitle title={'Add Item'}></PageTitle>
             <h3 style={{ fontWeight: '400' }} className='mb-3'>Add a New Item</h3>
             <form className='w-50 mx-auto d-flex flex-column' onSubmit={handleSubmit(onSubmit)}>
+                <input className='mb-3 w-100' type='text' disabled value={user?.displayName} {...register("userName")} />
                 <input className='mb-3 w-100' type='email' disabled value={user?.email} {...register("email")} />
                 <input className='mb-3 w-100' type='text' autoComplete='off' placeholder='Product Name' required {...register("name")} />
 

@@ -6,8 +6,8 @@ import SocialLogin from '../SocialLogin/SocialLogin';
 import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { auth } from '../../firebase.init';
 import PageTitle from '../../Shared/PageTitle/PageTitle';
-import { Spinner } from 'react-bootstrap';
 import { toast } from 'react-toastify';
+import Loading from '../../Shared/Loading/Loading';
 
 
 const Login = () => {
@@ -35,11 +35,7 @@ const Login = () => {
     };
 
     if (loading) {
-        return (
-            <div style={{ margin: '300px 0' }} className='text-center'>
-                <Spinner animation="border" variant="secondary" />
-            </div>
-        )
+        return <Loading></Loading>
     }
     if (user) {
         navigate(from, { replace: true });

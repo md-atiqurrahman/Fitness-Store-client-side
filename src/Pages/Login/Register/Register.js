@@ -2,10 +2,14 @@ import React, { useState } from 'react';
 import { useForm } from "react-hook-form";
 import { Link, useNavigate } from 'react-router-dom';
 import SocialLogin from '../SocialLogin/SocialLogin';
-import { useCreateUserWithEmailAndPassword, useSendEmailVerification } from 'react-firebase-hooks/auth';
+import {
+    useCreateUserWithEmailAndPassword,
+    useUpdateProfile,
+    useSendEmailVerification
+} from 'react-firebase-hooks/auth';
 import { auth } from '../../firebase.init';
-import { Spinner } from 'react-bootstrap';
 import { toast } from 'react-toastify';
+import Loading from '../../Shared/Loading/Loading';
 
 const Register = () => {
     const [defaultError, setDefaultError] = useState('');
@@ -19,39 +23,36 @@ const Register = () => {
         error,
     ] = useCreateUserWithEmailAndPassword(auth);
 
+    const [updateProfile, updating] = useUpdateProfile(auth);
+
     const [sendEmailVerification] = useSendEmailVerification(auth);
 
 
     const onSubmit = async (data) => {
-        const { email, password, confirmPassword } = data;
+        const { displayName, email, password, confirmPassword } = data;
 
         if (password !== confirmPassword) {
             setDefaultError('Password did not matched.Please try again.')
             return;
         }
         await createUserWithEmailAndPassword(email, password);
+        await updateProfile({ displayName})
         await sendEmailVerification();
         toast('Sent Email Verification')
+        navigate('/home')
         setDefaultError('');
         reset();
     }
 
-    if (loading) {
-        return (
-            <div style={{ margin: '300px 0' }} className='text-center'>
-                <Spinner animation="border" variant="secondary" />
-            </div>
-        )
-    }
-
-    if (user){
-        navigate('/home')
+    if (loading || updating) {
+        return <Loading></Loading>
     }
 
     return (
         <div className='my-5 w-50 mx-auto'>
             <h2 className='text-center mb-3'>Please Register <span style={{ color: '#ec3642' }}>!!</span></h2>
             <form className='w-50 mx-auto d-flex flex-column' onSubmit={handleSubmit(onSubmit)}>
+                <input className='mb-3 w-100' type='text' autoComplete='off' placeholder='Enter your name' required {...register("displayName")} />
                 <input className='mb-3 w-100' type='email' autoComplete='off' placeholder='Enter your email' required {...register("email")} />
                 <input className='mb-3 w-100' type="password" placeholder='Type password' required {...register("password")} />
                 <input className='mb-3 w-100' type="password" placeholder='Confirm password' required {...register("confirmPassword")} />

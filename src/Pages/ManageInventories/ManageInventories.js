@@ -37,6 +37,8 @@ const ManageInventories = () => {
                                 storedProducts.map(product => <ItemDetails
                                     key={product._id}
                                     product={product}
+                                    setStoredProducts = {setStoredProducts}
+                                    storedProducts = {storedProducts}
                                 >
                                 </ItemDetails>)
                             }

@@ -9,16 +9,30 @@ const AddItem = () => {
     const { register, handleSubmit, reset } = useForm();
 
     const onSubmit = data => {
-        console.log(data);
-        reset();
+
+        const url = `http://localhost:5000/products`;
+        fetch(url,{
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(data)
+        })
+        .then(res => res.json())
+        .then(result => {
+            if(result.acknowledged === true){
+                reset();
+            }
+        })
+
     }
     return (
         <div className='w-75 mx-auto text-center my-5'>
             <PageTitle title={'Add Item'}></PageTitle>
             <h3 style={{ fontWeight: '400' }} className='mb-3'>Add a New Item</h3>
             <form className='w-50 mx-auto d-flex flex-column' onSubmit={handleSubmit(onSubmit)}>
-                <input className='mb-3 w-100' type='text' disabled value={user?.displayName} {...register("userName")} />
-                <input className='mb-3 w-100' type='email' disabled value={user?.email} {...register("email")} />
+                <input className='mb-3 w-100' type='text' readOnly value={user.displayName} {...register("userName")} />
+                <input className='mb-3 w-100' type='email' readOnly value={user.email} {...register("email")} />
                 <input className='mb-3 w-100' type='text' autoComplete='off' placeholder='Product Name' required {...register("name")} />
 
                 <input className='mb-3 w-100' type='number' autoComplete='off' placeholder='Price' required {...register("price")} />
@@ -33,7 +47,7 @@ const AddItem = () => {
 
                 <input className='mb-3 w-100' type="text" autoComplete='off' placeholder='Sold Status' required {...register("sold")} />
 
-                <input className='mb-3 w-100' type="text" autoComplete='off' placeholder='Product Count' required {...register("count")} />
+                <input className='mb-3 w-100' type="number" autoComplete='off' placeholder='Product Count' required {...register("count")} />
 
                 <input className='mb-3 w-100' type="text" value={'https://ibb.co/BB5mVxD'} readOnly {...register("image")} />
 

@@ -37,10 +37,9 @@ const Register = () => {
             return;
         }
         await createUserWithEmailAndPassword(email, password);
-        await updateProfile({ displayName})
+        await updateProfile({ displayName })
         await sendEmailVerification();
         toast('Sent Email Verification')
-        navigate('/home')
         setDefaultError('');
         reset();
     }
@@ -49,6 +48,9 @@ const Register = () => {
         return <Loading></Loading>
     }
 
+    if (user) {
+        navigate('/home')
+    }
     return (
         <div className='login-form-container'>
             <PageTitle title={'Register'}></PageTitle>

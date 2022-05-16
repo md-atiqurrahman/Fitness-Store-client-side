@@ -13,7 +13,7 @@ const ManageStock = () => {
 
 
     useEffect(() => {
-        const url = `http://localhost:5000/products/${id}`;
+        const url = `https://salty-coast-80338.herokuapp.com/products/${id}`;
         fetch(url)
             .then(res => res.json())
             .then(data => setProduct(data))
@@ -24,7 +24,7 @@ const ManageStock = () => {
         product.quantity = reduceQuantity;
         const reducedProduct = {...product};
 
-        const url = `http://localhost:5000/products/${id}`;
+        const url = `https://salty-coast-80338.herokuapp.com/products/${id}`;
         fetch(url, {
             method: 'PUT',
             headers: {
@@ -49,7 +49,7 @@ const ManageStock = () => {
         product.quantity = addedQuantity;
         const newProduct = {...product};
     
-        const url = `http://localhost:5000/products/${id}`;
+        const url = `https://salty-coast-80338.herokuapp.com/products/${id}`;
 
         fetch(url, {
             method: 'PUT',

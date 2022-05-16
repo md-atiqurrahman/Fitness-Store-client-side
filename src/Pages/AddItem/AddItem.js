@@ -11,7 +11,7 @@ const AddItem = () => {
 
     const onSubmit = data => {
 
-        const url = `http://localhost:5000/products`;
+        const url = `https://salty-coast-80338.herokuapp.com/products`;
         fetch(url,{
             method: 'POST',
             headers: {

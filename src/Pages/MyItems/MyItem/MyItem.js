@@ -10,7 +10,7 @@ const MyItem = () => {
 
     useEffect(() => {
         const email = user.email;
-        const url = `http://localhost:5000/addedProduct?email=${email}`;
+        const url = `https://salty-coast-80338.herokuapp.com/addedProduct?email=${email}`;
         fetch(url)
             .then(res => res.json())
             .then(data => setMyAddedItem(data))

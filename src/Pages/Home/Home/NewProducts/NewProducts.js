@@ -10,7 +10,7 @@ import image6 from '../../../../images/Newproducts/speed box.png';
 const NewProducts = () => {
     return (
         <div className='new-products'>
-            <h2 className=' text-center'>
+            <h2 className='text-center'>
                 New Arrivals
             </h2>
             <p>IN STORE</p>
@@ -30,7 +30,7 @@ const NewProducts = () => {
                         <img src={image2} alt="" />
                     </div>
                     <div className='product-info'>
-                        <h5>Flexible Stress Tool Red</h5>
+                        <h5> Stress Tool Red</h5>
                         <h5><small>Quantity: <span style={{ color: '#ec3642' }}>139</span></small></h5>
                         <h5 style={{ color: '#ec3642' }}>$35.79-$39.04</h5>
                     </div>
@@ -50,7 +50,7 @@ const NewProducts = () => {
                         <img src={image4} alt="" />
                     </div>
                     <div className='product-info'>
-                        <h5>Electrical 3hp LCD Machine</h5>
+                        <h5>Electrical LCD Machine</h5>
                         <h5><small>Quantity: <span style={{ color: '#ec3642' }}>255</span></small></h5>
                         <h5 style={{ color: '#ec3642' }}>$511.99-$523.31</h5>
                     </div>
@@ -60,7 +60,7 @@ const NewProducts = () => {
                         <img src={image5} alt="" />
                     </div>
                     <div className='product-info'>
-                        <h5>Flexible Stressing Chair Red</h5>
+                        <h5>Stressing Chair Red</h5>
                         <h5><small>Quantity: <span style={{ color: '#ec3642' }}>173</span></small></h5>
                         <h5 style={{ color: '#ec3642' }}>$284.52-$297.56</h5>
                     </div>
@@ -70,7 +70,7 @@ const NewProducts = () => {
                         <img src={image6} alt="" />
                     </div>
                     <div className='product-info'>
-                        <h5>Boxing Speed Ball Pear Shape PU</h5>
+                        <h5>Boxing Speed Ball</h5>
                         <h5><small>Quantity: <span style={{ color: '#ec3642' }}>189</span></small></h5>
                         <h5 style={{ color: '#ec3642' }}>$8.43-$13.34</h5>
                     </div>

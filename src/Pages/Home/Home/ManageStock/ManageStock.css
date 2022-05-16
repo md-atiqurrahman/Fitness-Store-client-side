@@ -142,3 +142,79 @@
     margin-bottom: 0;
     font-weight: 400;
 }
+
+@media only screen and (max-width:668px) {
+    .item-container {
+        display: block;
+        text-align: center;
+    }
+
+    .image-container {
+        margin-top: 50px;
+        margin-right: 0px;
+        height: 432px;
+        width: 90%;
+        margin: 50px auto 0px;
+    }
+
+    .item-details {
+        width: 90%;
+        margin: 48px auto;
+    }
+
+    .options .color-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .stock-manager {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 34px;
+    }
+
+    .stock-manager .delivered-btn {
+        margin-bottom: 34px;
+        padding: 4px 12px;
+        font-size: 16px;
+        width: 40%;
+    }
+}
+
+@media only screen and (min-width:669px) and (max-width:992px){
+    .item-container {
+        display: block;
+        text-align: center;
+    }
+
+    .image-container {
+        margin-top: 50px;
+        margin-right: 0px;
+        height: 432px;
+        width: 75%;
+        margin: 50px auto 0px;
+    }
+
+    .item-details {
+        width: 75%;
+        margin: 48px auto;
+    }
+
+    .options .color-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .stock-manager {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 34px;
+    }
+
+    .stock-manager .delivered-btn {
+        margin-bottom: 34px;
+        padding: 4px 12px;
+        font-size: 16px;
+        width: 29%;
+    }
+}

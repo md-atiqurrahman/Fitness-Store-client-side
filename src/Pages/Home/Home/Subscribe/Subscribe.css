@@ -1,9 +1,10 @@
-.subscribe{
+.subscribe {
     display: flex;
     align-items: center;
     margin-bottom: 0;
 }
-.subscribe .store-details{
+
+.subscribe .store-details {
     background: url(../../../../images/Banner/banner7.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -16,52 +17,62 @@
     text-align: center;
     color: white;
 }
-.subscribe .store-details:hover{
+
+.subscribe .store-details:hover {
     opacity: .7;
 }
-.subscribe .store-details .details-text{
-     width: 50%;
-     padding: 85px 0;
+
+.subscribe .store-details .details-text {
+    width: 50%;
+    padding: 85px 0;
 }
-.subscribe .store-details .details-text h1{
+
+.subscribe .store-details .details-text h1 {
     font-size: 62px;
     line-height: 98px;
     font-style: italic;
     font-weight: bolder;
 }
-.subscribe .store-details .details-text h6{
-   font-size: 25px;
-   font-weight: 400;
-   letter-spacing: 4px;
+
+.subscribe .store-details .details-text h6 {
+    font-size: 25px;
+    font-weight: 400;
+    letter-spacing: 4px;
 }
-.subscribe .subscribe-field{
+
+.subscribe .subscribe-field {
     width: 41%;
     height: 100%;
     background: #ec3642;
     color: white;
 }
-.subscribe .subscribe-field .subscribe-details{
+
+.subscribe .subscribe-field .subscribe-details {
     margin-left: 77px;
     margin-top: 63px;
 }
-.subscribe-details h3{
+
+.subscribe-details h3 {
     font-style: italic;
     font-size: 34px;
     font-weight: 400;
-    
+
 }
-.subscribe-details h1{
+
+.subscribe-details h1 {
     font-size: 68px;
     font-weight: bolder;
     margin-bottom: 0;
 }
-.subscribe-details h2{
+
+.subscribe-details h2 {
     font-size: 52px;
     font-style: italic;
     margin-bottom: 0;
     margin-top: -10px;
 }
-.subscribe-details input{
+
+.subscribe-details input {
     margin-bottom: 25px;
     margin-top: 15px;
     width: 67%;
@@ -69,7 +80,8 @@
     border: 1px solid white;
     padding: 10px;
 }
-.subscribe-details button{
+
+.subscribe-details button {
     border: none;
     background: white;
     color: #ec3642;
@@ -78,29 +90,90 @@
     font-size: 20px;
     margin-bottom: 22px;
 }
-.subscribe-details button:hover{
+
+.subscribe-details button:hover {
     background: #1d1d1d;
     color: white;
 }
+
 @media only screen and (max-width:668px) {
-    .subscribe{
+    .subscribe {
         display: flex;
         flex-direction: column-reverse;
     }
-    .subscribe .store-details{
+
+    .subscribe .store-details {
         width: 100%;
         display: flex;
         justify-content: center;
     }
-    
-    .subscribe .subscribe-field{
+
+    .subscribe .subscribe-field {
         width: 100%;
         text-align: center;
     }
-    .subscribe .subscribe-field .subscribe-details{
+
+    .subscribe .subscribe-field .subscribe-details {
+        margin-left: 0px;
+        margin-top: 13px;
+    }
+
+    .subscribe-details h3 {
+        font-size: 25px;
+        margin-bottom: 0;
+    }
+
+    .subscribe-details h1 {
+        font-size: 45px;
+    }
+
+    .subscribe-details h2 {
+        font-size: 30px;
+    }
+    .subscribe-details input {
+        width: 50%;
+        padding: 3px;
+    }
+    .subscribe-details button {
+        font-size: 16px;
+    }
+    .subscribe .store-details .details-text {
+        width: 90%;
+        padding: 65px 0;
+    }
+    .subscribe .store-details .details-text h1 {
+        font-size: 35px;
+        line-height: 78px;
+        margin-bottom: 0;
+    }
+    .subscribe .store-details .details-text h6 {
+        font-size: 14px;
+        letter-spacing: 2px;
+    }
+}
+
+@media only screen and (min-width:669px) and (max-width:1024px){
+    .subscribe {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .subscribe .store-details {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .subscribe .subscribe-field {
+        width: 100%;
+        text-align: center;
+    }
+    .subscribe .subscribe-field .subscribe-details {
         margin-left: 0px;
     }
-    .subscribe-details h2{
-        font-size: 35px;
+    .subscribe-details input {
+        width: 50%;
+    }
+    .subscribe .store-details .details-text {
+       margin-right: 150px;
     }
 }

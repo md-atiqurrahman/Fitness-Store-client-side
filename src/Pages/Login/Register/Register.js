@@ -49,9 +49,9 @@ const Register = () => {
     }
 
     return (
-        <div className='my-5 w-50 mx-auto'>
+        <div className='login-form-container'>
             <h2 className='text-center mb-3'>Please Register <span style={{ color: '#ec3642' }}>!!</span></h2>
-            <form className='w-50 mx-auto d-flex flex-column' onSubmit={handleSubmit(onSubmit)}>
+            <form onSubmit={handleSubmit(onSubmit)}>
                 <input className='mb-3 w-100' type='text' autoComplete='off' placeholder='Enter your name' required {...register("displayName")} />
                 <input className='mb-3 w-100' type='email' autoComplete='off' placeholder='Enter your email' required {...register("email")} />
                 <input className='mb-3 w-100' type="password" placeholder='Type password' required {...register("password")} />

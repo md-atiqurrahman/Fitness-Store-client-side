@@ -1,3 +1,13 @@
+.login-form-container{
+    width: 50%;
+    margin: 40px auto;
+}
+.login-form-container form{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 auto;
+}
 form .submit-btn{
     background: #ec3642;
     border: none;
@@ -24,4 +34,32 @@ form .submit-btn:hover{
 }
 .horizontal-line p{
     margin: 2px 8px 0;
+}
+
+@media only screen and (max-width:668px){
+    .login-form-container{
+        width: 75%;
+        margin: 40px auto;
+    }
+    .login-form-container form{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .horizontal-line hr{
+        width: 40%;
+    }
+}
+
+@media only screen and (min-width:669px) and (max-width:1024px){
+    .login-form-container{
+        width: 45%;
+        margin: 40px auto;
+    }
+    .login-form-container form{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .horizontal-line hr{
+        width: 30%;
+    }
 }

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { Container,  Table } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import useLoading from '../../hooks/useLoading';
@@ -19,16 +19,13 @@ const ManageInventories = () => {
         (
             <div>
                 <PageTitle title={'Manage Items'}></PageTitle>
-                <Container className='w-90 my-5'>
-                    <Table striped bordered hover>
+                <Container className=' w-90 my-5'>
+                    <Table className='table' striped bordered hover>
                         <thead>
                             <tr>
                                 <th>SL no.</th>
                                 <th>Product Name</th>
-                                <th>Price</th>
                                 <th>Quantity</th>
-                                {/* <th>Sold</th>
-                                <th>Category</th> */}
                                 <th>Remove Item</th>
                             </tr>
                         </thead>

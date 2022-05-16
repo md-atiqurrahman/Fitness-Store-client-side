@@ -3,6 +3,7 @@ import { useAuthState } from 'react-firebase-hooks/auth';
 import { useForm } from "react-hook-form";
 import { auth } from '../firebase.init';
 import PageTitle from '../Shared/PageTitle/PageTitle';
+import './AddItem.css';
 
 const AddItem = () => {
     const [user] = useAuthState(auth);
@@ -27,10 +28,10 @@ const AddItem = () => {
 
     }
     return (
-        <div className='w-75 mx-auto text-center my-5'>
+        <div className='form-container'>
             <PageTitle title={'Add Item'}></PageTitle>
             <h3 style={{ fontWeight: '400' }} className='mb-3'>Add a New Item</h3>
-            <form className='w-50 mx-auto d-flex flex-column' onSubmit={handleSubmit(onSubmit)}>
+            <form className='form' onSubmit={handleSubmit(onSubmit)}>
                 <input className='mb-3 w-100' type='text' readOnly value={user.displayName} {...register("userName")} />
                 <input className='mb-3 w-100' type='email' readOnly value={user.email} {...register("email")} />
                 <input className='mb-3 w-100' type='text' autoComplete='off' placeholder='Product Name' required {...register("name")} />

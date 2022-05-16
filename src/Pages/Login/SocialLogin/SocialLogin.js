@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './SocialLogin.css';
 import google from '../../../images/Social/google.png';
 import { auth } from '../../firebase.init';
@@ -10,22 +10,21 @@ const SocialLogin = () => {
     let location = useLocation();
 
     let from = location.state?.from?.pathname || "/";
-
-    const [signInWithGoogle, user, loading, error] = useSignInWithGoogle(auth);
-
-    const handleSocialSignIn = () =>{
+    const [signInWithGoogle, user] = useSignInWithGoogle(auth);
+    const handleSocialSignIn = () => {
         signInWithGoogle();
     }
-    if(user){
-        navigate(from, { replace: true });
-    }
+    useEffect(() => {
+        if (user) {
+            navigate(from, { replace: true });
+        }
+    }, [user]);
 
     return (
-        <div onClick={handleSocialSignIn} className='social-login d-flex justify-content-center align-items-center'>
+        <div onClick={handleSocialSignIn} className='social-login'>
             <img src={google} alt="" />
             <span className='signin-text'>Sign-in With Google</span>
         </div>
     );
 };
-
 export default SocialLogin;

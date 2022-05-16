@@ -1,4 +1,7 @@
 .social-login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: 1px solid #ec3642;
     width: 40%;
     margin: 0 auto;
@@ -7,4 +10,16 @@
 }
 .social-login .signin-text{
    margin-left: 10px;
+}
+@media only screen and (max-width:668px){
+    .social-login{
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+@media only screen and (min-width:669px) and (max-width:1024px){
+    .social-login{
+        width: 100%;
+        margin: 0 auto;
+    }
 }

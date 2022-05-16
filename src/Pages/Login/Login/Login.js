@@ -52,10 +52,10 @@ const Login = () => {
     }
 
     return (
-        <div className='my-5 w-50 mx-auto'>
+        <div className='login-form-container '>
             <PageTitle title={'Login'}></PageTitle>
             <h2 className='text-center mb-3'>Please Login <span style={{ color: '#ec3642' }}>!!</span></h2>
-            <form className='w-50 mx-auto d-flex flex-column' onSubmit={handleSubmit(onSubmit)}>
+            <form  onSubmit={handleSubmit(onSubmit)}>
                 <input className='mb-3 w-100'  name='email' type='email' autoComplete='off' placeholder='Enter your email' required {...register("email")} />
                 <input className='mb-3 w-100' type="password" placeholder='Type password' required {...register("password")} />
                 <p className='text-danger'>{defaultError || error?.message}</p>

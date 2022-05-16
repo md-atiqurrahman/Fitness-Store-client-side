@@ -1,9 +1,8 @@
 import React from 'react';
 import './Footer.css';
-import img from '../../../images/Footer/payment method.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHome, faPhone, faEnvelope, faClock, faTruckFast, faHeadset, faArrowRotateLeft, faCreditCard } from '@fortawesome/free-solid-svg-icons';
-import { faFacebookF, faGooglePay, faGooglePlay, faGooglePlusG, faInstagram, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons';
+import { faHome, faPhone, faEnvelope, faClock,  faHeadset,   faBuildingShield, faWarehouse, faFireExtinguisher } from '@fortawesome/free-solid-svg-icons';
+import { faFacebookF,  faGooglePlusG, faInstagram, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons';
 
 const Footer = () => {
     const today = new Date();
@@ -44,14 +43,14 @@ const Footer = () => {
                 <div className='information'>
                     <h5>Information</h5>
                     <p>About us</p>
-                    <p>Delivery Information</p>
+                    <p>Stock Information</p>
                     <p>Privacy Policy</p>
                     <p>Terms and Conditions</p>
                     <p>Returns</p>
                     <p>Site map</p>
                     <p>Gift certificates</p>
                 </div>
-                <div className='information'>
+                <div className='account-information'>
                     <h5>My Account</h5>
                     <p>My Account</p>
                     <p>Stock History</p>
@@ -59,14 +58,14 @@ const Footer = () => {
                     <p>Newsletter</p>
                     <p>Affiliate</p>
                     <p>Specials</p>
-                    <p>International Orders</p>
+                    <p>International Products</p>
                 </div>
                 <div className='support'>
-                    <div className='d-flex '>
-                        <FontAwesomeIcon className='icon' icon={faTruckFast} />
+                    <div style={{marginTop: '5px'}} className='d-flex '>
+                        <FontAwesomeIcon className='icon' icon={faWarehouse} />
                         <p>
-                            Free Shipping <br />
-                            <span className='under-text' >Free shipping on all delivery</span>
+                            Our Store<br />
+                            <span className='under-text' >We always keep our store full with products</span>
                         </p>
                     </div>
                     <div className='d-flex'>
@@ -77,28 +76,25 @@ const Footer = () => {
                         </p>
                     </div>
                     <div className='d-flex'>
-                        <FontAwesomeIcon className='icon' icon={faArrowRotateLeft} />
+                        <FontAwesomeIcon className='icon' icon={faFireExtinguisher} />
                         <p>
-                            30 Days Return <br />
-                            <span className='under-text'> Return it within 30 days for an exchange</span>
+                            Prevent Fire Accident<br />
+                            <span className='under-text'>We have the latest fire prevent system</span>
                         </p>
                     </div>
                     <div className='d-flex'>
-                        <FontAwesomeIcon className='icon' icon={faCreditCard} />
+                        <FontAwesomeIcon className='icon' icon={faBuildingShield} />
                         <p>
-                            100% Payment Secure <br />
-                            <span className='under-text'>We ensure secure payment with PEV</span>
+                            Our Store is 100% Secure <br />
+                            <span className='under-text'>We ensure security first</span>
                         </p>
                     </div>
                 </div>
             </div>
-            {/* <hr style={{color: '#999999',marginTop: '40px'}} className='w-90' /> */}
-            <div className='copyright-info d-lg-flex justify-content-around align-items-center text-white '>
+            <hr style={{color: '#999999',marginTop: '40px'}} className='w-90' />
+            <div className='copyright-info text-white text-center '>
                 <div>
-                    <p className='mb-0'>Copyright © {year} <span style={{ color: ' #ec3642' }}>Fitness Store</span> all rights reserverd</p>
-                </div>
-                <div>
-                    <img width={'100%'} src={img} alt="" />
+                    <p className='mb-0'>Copyright © {year} <span style={{ color: ' #ec3642' }}>Fitness Store</span> all rights reserved</p>
                 </div>
             </div>
         </footer>

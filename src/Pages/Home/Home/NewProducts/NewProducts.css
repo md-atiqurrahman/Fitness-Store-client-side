@@ -40,8 +40,6 @@
     .new-products-container {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        grid-gap: 20px;
-        justify-content: center;
         width: 100%;
     }
 
@@ -60,5 +58,22 @@
     .product-container .product-info {
         margin-left: 0px;
         text-align: center;
+    }
+}
+
+@media only screen and (min-width:669px) and (max-width:1024px){
+    .new-products-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 10px;
+    }
+    .product-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .product-container img {
+        width: 100%;
     }
 }

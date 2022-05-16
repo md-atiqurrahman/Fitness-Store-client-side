@@ -1,7 +1,7 @@
 import React from 'react';
 
 const ItemDetails = ({ product, setStoredProducts, storedProducts }) => {
-    const { _id, count, price, quantity, name, category, sold } = product;
+    const { _id, count,  quantity, name } = product;
 
     const handleDelete = id => {
         const url = `http://localhost:5000/products/${id}`;
@@ -18,15 +18,12 @@ const ItemDetails = ({ product, setStoredProducts, storedProducts }) => {
     }
 
     return (
-        <tr>
+        <tr className='tr'>
             <td>{count}</td>
             <td>{name}</td>
-            <td>${price}</td>
             <td>{quantity}</td>
-            {/* <td>{sold}</td>
-            <td>{category}</td> */}
-            <td style={{ backgroundColor: '#efefef' }}>
-                <button onClick={() => handleDelete(_id)} style={{ width: '100%', border: 'none', backgroundColor: 'white' }}>
+            <td className='tr' style={{ backgroundColor: '#efefef' }}>
+                <button className='btn' onClick={() => handleDelete(_id)} style={{ width: '100%', border: 'none', backgroundColor: 'white' }}>
                     Delete
                 </button>
             </td>

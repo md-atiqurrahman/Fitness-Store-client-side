@@ -24,9 +24,16 @@
         flex-direction: column;
         row-gap: 30px;
         text-align: center;
-        border: 1px solid #ebebeb;
-        padding: 40px;
-        width: 85%;
-        margin: 0 auto;
+    }
+}
+
+@media only screen and (min-width:669px) and (max-width:992px){
+    .suppliers .logo-container {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        align-items: center;
+        justify-items: center;
+        row-gap: 20px;
+       
     }
 }

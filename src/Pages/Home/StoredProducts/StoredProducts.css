@@ -99,23 +99,33 @@
     .products-container {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        grid-gap: 60px;
-        justify-content: center;
-        margin-top: 30px;
-    }
-
-    .stored-products .title {
-        font-size: 18px;
-    }
-    .stored-products .sub-title {
-       font-size: 12px;
     }
     .card-container {
         width: 90%;
         margin: 0 auto;
     }
-    .manage-btn {
+    .product-details button {
+        padding: 5px;
         font-size: 12px;
     }
+    .manage-btn {
+        font-size: 18px;
+    }
 
+}
+
+@media only screen and (min-width:669px) and (max-width:992px){
+    .products-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+    }
+    .card-container {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .product-details button {
+        padding: 7px;
+        font-size: 12px;
+    }
 }

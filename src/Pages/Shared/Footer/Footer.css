@@ -25,18 +25,18 @@
     margin-bottom: 20px;
 }
 
-.footer .information h5 {
+.footer .information h5 , .account-information h5 {
     font-weight: bolder;
     font-style: italic;
 }
 
-.footer .information p {
+.footer .information p , .account-information p {
     color: #999999;
 }
 
 .footer .support .icon {
-    margin-right: 20px;
-    font-size: 25px;
+    margin-right: 10px;
+    font-size: 18px;
     color: #999999;
 }
 
@@ -70,5 +70,25 @@
 
     .footer .copyright-info img {
         width: 90%;
+    }
+    .footer button {
+        font-size: 22px;
+    }
+}
+
+@media only screen and (min-width:669px) and (max-width:992px){
+    .footer .footer-container {
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      justify-items: center;
+    }
+    .footer .account-information{
+        margin-right: 74px;
+        margin-top: 20px;
+    }
+    .footer .support{
+        margin-left: 120px;
+        margin-top: 20px;
+        margin-right: 20px;
     }
 }

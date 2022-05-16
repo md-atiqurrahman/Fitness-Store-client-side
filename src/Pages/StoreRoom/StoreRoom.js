@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react';
-import { Bar, BarChart, Legend, Tooltip, XAxis, YAxis } from 'recharts';
+import { Container } from 'react-bootstrap';
+import { Bar, BarChart, CartesianGrid, Legend, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
 import useLoading from '../../hooks/useLoading';
 import Loading from '../Shared/Loading/Loading';
 import PageTitle from '../Shared/PageTitle/PageTitle';
+import './StoreRoom.css';
 
 const StoreRoom = () => {
     const [storedProducts, setStoredProducts] = useState([]);
@@ -28,21 +30,26 @@ const StoreRoom = () => {
     }, [])
     return loading ?
         (
-           <Loading></Loading>
+            <Loading></Loading>
         )
         :
         (
             <div className='my-5'>
                 <PageTitle title={'Store Room'}></PageTitle>
-                <div className='w-75 mx-auto'>
-                    <BarChart className='w-90 mx-auto text-center' width={800} height={400} data={storedProducts}>
-                        <Bar dataKey={'Quantity'} fill="#8884d8" />
-                        <XAxis dataKey={'name'}></XAxis>
-                        <YAxis></YAxis>
-                        <Tooltip></Tooltip>
-                        <Legend></Legend>
-                    </BarChart>
-                </div>
+                <Container className='chart-container'>
+                    <ResponsiveContainer className='responsive-container' width="95%" height={400}>
+                        <BarChart className="barChart" data={storedProducts}
+                            margin={{ top: 5, right: 30, left: 20, bottom: 5 }} >
+                            <CartesianGrid strokeDasharray="3 3" />
+                            <Bar dataKey={'Quantity'} fill="#8884d8" />
+                            <XAxis dataKey="name" />
+                            <YAxis />
+                            <Tooltip />
+                            <Legend />
+                            <Bar dataKey="Product Name" barSize={10} fill="#666666" />
+                        </BarChart>
+                    </ResponsiveContainer>
+                </Container>
             </div>
         );
 };

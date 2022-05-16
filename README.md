@@ -1,25 +1,26 @@
 # Fitness Store
 
-My website [Live link](https://gym-equipment-store.web.app/).
+My website [Live link](https://gym-equipment-store.web.app/)
+.
 
-*  My website's different features and functionality
+* My website's different features and functionality
 
-       *  I use custom hooks for develope my website.
-       *  I use firebase authentication system for login or sign-up
-       *  My website  is responsive in all devices.
-       *  Some page is protected by private route in my website.
-       *  I use optimized and compressed image in my website.
-       *  A list of technologies and library which are used in my website.
-          *  1.React.js
-          *  2.React-bootstrap
-          *  3.Bootstrap
-          *  4.Animate.css
-          *  5.React-helmet-async
-          *  6.Recharts
-          *  7.React-hook-form
-          *  8.React-fontawesome
-          *  9.React-Firebase-hooks
-          *  10.React-Toastify
+       * I use custom hooks for develope my website.
+       * I use firebase authentication system for login or sign-up
+       * My website  is responsive in all devices.
+       * Some page is protected by private route in my website.
+       * I use optimized and compressed image in my website.
+       * A list of technologies and library which are used in my website.
+          * 1.React.js
+          * 2.React-bootstrap
+          * 3.Bootstrap
+          * 4.Animate.css
+          * 5.React-helmet-async
+          * 6.Recharts
+          * 7.React-hook-form
+          * 8.React-fontawesome
+          * 9.React-Firebase-hooks
+          * 10.React-Toastify
 
 ## Available Scripts
 

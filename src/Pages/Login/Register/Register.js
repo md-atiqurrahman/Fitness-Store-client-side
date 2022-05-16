@@ -10,6 +10,7 @@ import {
 import { auth } from '../../firebase.init';
 import { toast } from 'react-toastify';
 import Loading from '../../Shared/Loading/Loading';
+import PageTitle from '../../Shared/PageTitle/PageTitle';
 
 const Register = () => {
     const [defaultError, setDefaultError] = useState('');
@@ -50,6 +51,7 @@ const Register = () => {
 
     return (
         <div className='login-form-container'>
+            <PageTitle title={'Register'}></PageTitle>
             <h2 className='text-center mb-3'>Please Register <span style={{ color: '#ec3642' }}>!!</span></h2>
             <form onSubmit={handleSubmit(onSubmit)}>
                 <input className='mb-3 w-100' type='text' autoComplete='off' placeholder='Enter your name' required {...register("displayName")} />

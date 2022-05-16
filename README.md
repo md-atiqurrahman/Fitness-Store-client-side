@@ -3,7 +3,7 @@
 My website [Live link](https://gym-equipment-store.web.app/)
 .
 
-  * Description of different features and functionality of my project
+  * Description of different features and functionality of my website
 
        * I use custom hooks for develope my website.
        * I use firebase authentication system for login or sign-up

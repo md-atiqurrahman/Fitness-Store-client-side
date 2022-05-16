@@ -10,7 +10,7 @@ const MyItem = () => {
 
     useEffect(() => {
         const email = user.email;
-        const url = `http://localhost:5000/addingItem?email=${email}`;
+        const url = `http://localhost:5000/addedProduct?email=${email}`;
         fetch(url)
             .then(res => res.json())
             .then(data => setMyAddedItem(data))

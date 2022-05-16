@@ -5,15 +5,18 @@ const Item = ({ product, setMyAddedItem, myAddedItem }) => {
 
     const handleDelete = id => {
 
-        const url = `http://localhost:5000/addingItem/${id}`;
+        const url = `http://localhost:5000/addedProduct/${id}`;
         fetch(url, {
             method: 'DELETE'
         })
             .then(res => res.json())
             .then(data => {
                 if (data.acknowledged === true) {
-                    const remainingItem = myAddedItem.filter(item => item._id !== id);
-                    setMyAddedItem(remainingItem);
+                    const proceed = window.confirm('Are you sure for delete?')
+                    if (proceed) {
+                        const remainingItem = myAddedItem.filter(item => item._id !== id);
+                        setMyAddedItem(remainingItem);
+                    }
                 }
 
             })

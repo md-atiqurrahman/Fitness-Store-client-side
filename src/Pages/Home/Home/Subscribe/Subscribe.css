@@ -1,6 +1,7 @@
 .subscribe{
     display: flex;
     align-items: center;
+    margin-bottom: 0;
 }
 .subscribe .store-details{
     background: url(../../../../images/Banner/banner7.png);
@@ -29,7 +30,7 @@
     font-weight: bolder;
 }
 .subscribe .store-details .details-text h6{
-   font-size: 24px;
+   font-size: 25px;
    font-weight: 400;
    letter-spacing: 4px;
 }
@@ -41,7 +42,7 @@
 }
 .subscribe .subscribe-field .subscribe-details{
     margin-left: 77px;
-    margin-top: 60px;
+    margin-top: 63px;
 }
 .subscribe-details h3{
     font-style: italic;
@@ -75,9 +76,31 @@
     padding: 10px 30px;
     border-radius: 50px;
     font-size: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 22px;
 }
 .subscribe-details button:hover{
     background: #1d1d1d;
     color: white;
+}
+@media only screen and (max-width:668px) {
+    .subscribe{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .subscribe .store-details{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .subscribe .subscribe-field{
+        width: 100%;
+        text-align: center;
+    }
+    .subscribe .subscribe-field .subscribe-details{
+        margin-left: 0px;
+    }
+    .subscribe-details h2{
+        font-size: 35px;
+    }
 }

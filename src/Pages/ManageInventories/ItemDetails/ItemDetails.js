@@ -23,8 +23,8 @@ const ItemDetails = ({ product, setStoredProducts, storedProducts }) => {
             <td>{name}</td>
             <td>${price}</td>
             <td>{quantity}</td>
-            <td>{sold}</td>
-            <td>{category}</td>
+            {/* <td>{sold}</td>
+            <td>{category}</td> */}
             <td style={{ backgroundColor: '#efefef' }}>
                 <button onClick={() => handleDelete(_id)} style={{ width: '100%', border: 'none', backgroundColor: 'white' }}>
                     Delete

@@ -1,17 +1,32 @@
-.suppliers{
-    margin: 0px 0 100px 0;
+.suppliers {
+    margin: 0px 0px 100px 0px;
 }
-.suppliers h2{
+
+.suppliers h2 {
     text-align: center;
     font-weight: bolder;
     font-style: italic;
     margin: 100px 0 50px 0;
 }
-.suppliers .logo-container{
+
+.suppliers .logo-container {
     display: flex;
     justify-content: space-around;
     border: 1px solid #ebebeb;
     padding: 40px;
     width: 85%;
     margin: 0 auto;
+}
+
+@media only screen and (max-width:668px) {
+    .suppliers .logo-container {
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+        text-align: center;
+        border: 1px solid #ebebeb;
+        padding: 40px;
+        width: 85%;
+        margin: 0 auto;
+    }
 }

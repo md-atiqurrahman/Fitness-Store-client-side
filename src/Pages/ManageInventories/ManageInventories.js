@@ -19,7 +19,7 @@ const ManageInventories = () => {
         (
             <div>
                 <PageTitle title={'Manage Items'}></PageTitle>
-                <Container className='my-5'>
+                <Container className='w-90 my-5'>
                     <Table striped bordered hover>
                         <thead>
                             <tr>
@@ -27,8 +27,8 @@ const ManageInventories = () => {
                                 <th>Product Name</th>
                                 <th>Price</th>
                                 <th>Quantity</th>
-                                <th>Sold</th>
-                                <th>Category</th>
+                                {/* <th>Sold</th>
+                                <th>Category</th> */}
                                 <th>Remove Item</th>
                             </tr>
                         </thead>

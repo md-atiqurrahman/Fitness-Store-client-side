@@ -10,7 +10,7 @@ const Footer = () => {
     const year = today.getFullYear();
     return (
         <footer className='footer'>
-            <div className='d-flex justify-content-around text-white pt-5'>
+            <div className='footer-container d-lg-flex justify-content-around text-white pt-5'>
                 <div className='store-info'>
                     <button>
                         Fitness Store
@@ -63,28 +63,28 @@ const Footer = () => {
                 </div>
                 <div className='support'>
                     <div className='d-flex '>
-                        <FontAwesomeIcon style={{ marginRight: '20px', fontSize: '25px', color: '#999999' }} icon={faTruckFast} />
+                        <FontAwesomeIcon className='icon' icon={faTruckFast} />
                         <p>
                             Free Shipping <br />
                             <span className='under-text' >Free shipping on all delivery</span>
                         </p>
                     </div>
                     <div className='d-flex'>
-                        <FontAwesomeIcon style={{ marginRight: '20px', fontSize: '25px', color: '#999999' }} icon={faHeadset} />
+                        <FontAwesomeIcon className='icon' icon={faHeadset} />
                         <p>
                             Support 24/7 <br />
                             <span className='under-text'>Contact us 24 hours a day, 7 days a week</span>
                         </p>
                     </div>
                     <div className='d-flex'>
-                        <FontAwesomeIcon style={{ marginRight: '20px', fontSize: '25px', color: '#999999' }} icon={faArrowRotateLeft} />
+                        <FontAwesomeIcon className='icon' icon={faArrowRotateLeft} />
                         <p>
                             30 Days Return <br />
                             <span className='under-text'> Return it within 30 days for an exchange</span>
                         </p>
                     </div>
                     <div className='d-flex'>
-                        <FontAwesomeIcon style={{ marginRight: '20px', fontSize: '25px', color: '#999999' }} icon={faCreditCard} />
+                        <FontAwesomeIcon className='icon' icon={faCreditCard} />
                         <p>
                             100% Payment Secure <br />
                             <span className='under-text'>We ensure secure payment with PEV</span>
@@ -92,7 +92,8 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <div className='copyright-info d-flex justify-content-around align-items-center text-white mt-5'>
+            {/* <hr style={{color: '#999999',marginTop: '40px'}} className='w-90' /> */}
+            <div className='copyright-info d-lg-flex justify-content-around align-items-center text-white '>
                 <div>
                     <p className='mb-0'>Copyright © {year} <span style={{ color: ' #ec3642' }}>Fitness Store</span> all rights reserverd</p>
                 </div>

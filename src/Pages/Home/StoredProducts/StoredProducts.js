@@ -28,15 +28,15 @@ const StoredProducts = () => {
                     <p className='hr-text mx-2'>X</p>
                     <hr />
                 </div>
-                <div className='products-container '>
-                    {
-                        selectedProducts.map(product => <StoredProduct
-                            key={product._id}
-                            product={product}
-                        ></StoredProduct>
-                        )
-                    }
-                </div>
+                    <div className='products-container '>
+                        {
+                            selectedProducts.map(product => <StoredProduct
+                                key={product._id}
+                                product={product}
+                            ></StoredProduct>
+                            )
+                        }
+                    </div>
                 <Link to='/manage'><button className='manage-btn'> Manage Inventories</button></Link>
             </div>
         );

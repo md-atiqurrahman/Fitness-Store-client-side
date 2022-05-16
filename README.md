@@ -3,8 +3,7 @@
 My website [Live link](https://gym-equipment-store.web.app/)
 .
 
-
-* My website's different features and functionality
+  * Description of different features and functionality of my project
 
        * I use custom hooks for develope my website.
        * I use firebase authentication system for login or sign-up
@@ -16,13 +15,14 @@ My website [Live link](https://gym-equipment-store.web.app/)
           * 2.React-bootstrap
           * 3.Bootstrap
           * 4.Animate.css
-          * 5.React-helmet-async
-          * 6.Recharts
-          * 7.React-hook-form
-          * 8.React-fontawesome
-          * 9.React-Firebase-hooks
+          * 5.React-helmet-async          
+          * 6.Recharts          
+          * 7.React-hook-form          
+          * 8.React-fontawesome          
+          * 9.React-Firebase-hooks          
           * 10.React-Toastify
 
+          
 ## Available Scripts
 
 In the project directory, you can run:

@@ -11,6 +11,7 @@
 form .submit-btn{
     background: #ec3642;
     border: none;
+    border-radius: 3px;
     color: white;
     padding: 5px;
     width: 50%;
@@ -20,7 +21,7 @@ form .submit-btn{
 }
 
 form .submit-btn:hover{
-    background: #eea0a6;
+    background: #1d1d1d;
 }
 
 .horizontal-line{

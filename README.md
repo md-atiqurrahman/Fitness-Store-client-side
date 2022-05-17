@@ -21,6 +21,7 @@ My website [Live link](https://gym-equipment-store.web.app/)
           * 8.React-fontawesome          
           * 9.React-Firebase-hooks          
           * 10.React-Toastify
+          * 11.Axios
 
           
 ## Available Scripts

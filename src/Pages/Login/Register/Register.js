@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, {  useState } from 'react';
 import { useForm } from "react-hook-form";
 import { Link, useNavigate } from 'react-router-dom';
 import SocialLogin from '../SocialLogin/SocialLogin';
@@ -51,6 +51,7 @@ const Register = () => {
     if (user) {
         navigate('/home')
     }
+
     return (
         <div className='login-form-container'>
             <PageTitle title={'Register'}></PageTitle>

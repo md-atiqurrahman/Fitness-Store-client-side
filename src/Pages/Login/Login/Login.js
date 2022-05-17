@@ -8,6 +8,7 @@ import { auth } from '../../firebase.init';
 import PageTitle from '../../Shared/PageTitle/PageTitle';
 import { toast } from 'react-toastify';
 import Loading from '../../Shared/Loading/Loading';
+import axios from 'axios';
 
 
 const Login = () => {
@@ -28,18 +29,20 @@ const Login = () => {
     const [sendPasswordResetEmail] = useSendPasswordResetEmail(auth);
    
    
-    const onSubmit = data => {
+    const onSubmit = async (data) => {
         const { email, password } = data;
-        signInWithEmailAndPassword(email, password);
+        await signInWithEmailAndPassword(email, password);
+        const response = await axios.post('https://salty-coast-80338.herokuapp.com/getToken',{email})
+        const {accessToken} = response.data;
+        localStorage.setItem('accessToken',accessToken);
         reset();
+        navigate(from, { replace: true });
     };
 
     if (loading) {
         return <Loading></Loading>
     }
-    if (user) {
-        navigate(from, { replace: true });
-    }
+    
 
     const handleResetPassword = async (data) =>{
        if(!data.email){
@@ -56,7 +59,7 @@ const Login = () => {
             <PageTitle title={'Login'}></PageTitle>
             <h2 className='text-center mb-3'>Please Login <span style={{ color: '#ec3642' }}>!!</span></h2>
             <form  onSubmit={handleSubmit(onSubmit)}>
-                <input className='mb-3 w-100'  name='email' type='email' autoComplete='off' placeholder='Enter your email' required {...register("email")} />
+                <input className='mb-3 w-100'  name='email' type='email' placeholder='Enter your email' required {...register("email")} />
                 <input className='mb-3 w-100' type="password" placeholder='Type password' required {...register("password")} />
                 <p className='text-danger'>{defaultError || error?.message}</p>
                 <input className='submit-btn' type="submit" value='Login' />

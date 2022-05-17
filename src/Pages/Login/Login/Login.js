@@ -42,7 +42,7 @@ const Login = () => {
         return <Loading></Loading>
     }
     
-    if(user){
+    if(user && !error){
         navigate(from, { replace: true });
     }
 

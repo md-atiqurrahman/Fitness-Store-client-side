@@ -36,13 +36,15 @@ const Login = () => {
         const {accessToken} = response.data;
         localStorage.setItem('accessToken',accessToken);
         reset();
-        navigate(from, { replace: true });
     };
 
     if (loading) {
         return <Loading></Loading>
     }
     
+    if(user){
+        navigate(from, { replace: true });
+    }
 
     const handleResetPassword = async (data) =>{
        if(!data.email){

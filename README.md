@@ -1,5 +1,8 @@
 # Fitness Store
 
+It is a gym equipment management website.You can manage different
+items of gym in this website.
+
 My website [Live link](https://gym-equipment-store.web.app/)
 .
 

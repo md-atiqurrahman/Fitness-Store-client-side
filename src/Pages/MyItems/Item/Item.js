@@ -5,7 +5,7 @@ const Item = ({ product, setMyAddedItem, myAddedItem }) => {
 
     const handleDelete = id => {
 
-        const url = `https://salty-coast-80338.herokuapp.com/addedProduct/${id}`;
+        const url = `https://gym-equipment-server-side.up.railway.app/addedProduct/${id}`;
         fetch(url, {
             method: 'DELETE'
         })

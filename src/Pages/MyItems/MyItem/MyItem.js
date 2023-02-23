@@ -11,10 +11,10 @@ const MyItem = () => {
     const [myAddedItem, setMyAddedItem] = useState([]);
     const [user] = useAuthState(auth);
     const navigate = useNavigate();
-
+    console.log(myAddedItem)
     useEffect(() => {
         const email = user.email;
-        const url = `https://salty-coast-80338.herokuapp.com/addedProduct?email=${email}`;
+        const url = `https://gym-equipment-server-side.up.railway.app/addedProduct?email=${email}`;
 
         const getItem = async () => {
             try {
@@ -30,7 +30,7 @@ const MyItem = () => {
         }
         getItem()
 
-    }, [user])
+    }, [ user,navigate])
 
     return (
         <>

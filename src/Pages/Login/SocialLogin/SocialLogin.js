@@ -10,15 +10,16 @@ const SocialLogin = () => {
     let location = useLocation();
 
     let from = location.state?.from?.pathname || "/";
-    const [signInWithGoogle, user] = useSignInWithGoogle(auth);
+    const [signInWithGoogle ,user] = useSignInWithGoogle(auth);
+
     const handleSocialSignIn = () => {
         signInWithGoogle();
     }
     useEffect(() => {
         if (user) {
             navigate(from, { replace: true });
-        }
-    }, [user]);
+        }     
+    }, [user,from,navigate]);
 
     return (
         <div onClick={handleSocialSignIn} className='social-login'>

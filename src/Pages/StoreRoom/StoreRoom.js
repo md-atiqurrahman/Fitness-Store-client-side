@@ -13,7 +13,7 @@ const StoreRoom = () => {
 
 
     useEffect(() => {
-        fetch('https://salty-coast-80338.herokuapp.com/products')
+        fetch('https://gym-equipment-server-side.up.railway.app/products')
             .then(res => res.json())
             .then(data => {
                 const product = data.map(item => {

@@ -4,7 +4,7 @@ const ItemDetails = ({ product, setStoredProducts, storedProducts }) => {
     const { _id, count,  quantity, name } = product;
 
     const handleDelete = id => {
-        const url = `https://salty-coast-80338.herokuapp.com/products/${id}`;
+        const url = `https://gym-equipment-server-side.up.railway.app/products/${id}`;
         fetch(url, {
             method: 'DELETE'
         })

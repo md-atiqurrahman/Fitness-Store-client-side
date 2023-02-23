@@ -11,7 +11,7 @@ const AddItem = () => {
 
     const onSubmit = data => {
 
-        const url = `https://salty-coast-80338.herokuapp.com/products`;
+        const url = `https://gym-equipment-server-side.up.railway.app/products`;
         fetch(url,{
             method: 'POST',
             headers: {

@@ -24,27 +24,27 @@ Explore the live version of Fitness Store by clicking [here.](https://gym-equipm
  * Technologies and Libraries Used
  Here's a list of the technologies and libraries employed to build Fitness Store:
 
-  * React.js: The frontend of the website is powered by React, offering a dynamic and interactive user interface.
+   * React.js: The frontend of the website is powered by React, offering a dynamic and interactive user interface.
 
-  * React-bootstrap: We use React-bootstrap for responsive and feature-rich UI components.
+   * React-bootstrap: We use React-bootstrap for responsive and feature-rich UI components.
 
-  * Bootstrap: Bootstrap helps maintain a consistent and visually appealing design across the site.
+   * Bootstrap: Bootstrap helps maintain a consistent and visually appealing design across the site.
 
-  * Animate.css: Animate.css adds smooth and engaging animations to various elements.
+   * Animate.css: Animate.css adds smooth and engaging animations to various elements.
 
-  * React-helmet-async: This library aids in managing the document head, optimizing SEO, and enhancing user experience.
+   * React-helmet-async: This library aids in managing the document head, optimizing SEO, and enhancing user experience.
 
-  * Recharts: For data visualization and charting purposes, we've incorporated Recharts.
+   * Recharts: For data visualization and charting purposes, we've incorporated Recharts.
 
-  * React-hook-form: React-hook-form simplifies form handling and validation, ensuring user-friendly interactions.
+   * React-hook-form: React-hook-form simplifies form handling and validation, ensuring user-friendly interactions.
 
-  * React-fontawesome: We've integrated React-fontawesome to include scalable vector icons throughout the website.
+   * React-fontawesome: We've integrated React-fontawesome to include scalable vector icons throughout the website.
 
-  * React-Firebase-hooks: This library provides seamless integration with Firebase, simplifying data retrieval and updates.
+   * React-Firebase-hooks: This library provides seamless integration with Firebase, simplifying data retrieval and updates.
 
-  * React-Toastify: For displaying user notifications and alerts, we use React-Toastify.
+   * React-Toastify: For displaying user notifications and alerts, we use React-Toastify.
 
-  * Axios: Axios is employed for making HTTP requests, enabling efficient data exchange between the frontend and backend.
+   * Axios: Axios is employed for making HTTP requests, enabling efficient data exchange between the frontend and backend.
 
 
 ## Get Started
@@ -70,6 +70,6 @@ Contributions and improvements to Fitness Store are welcome! If you find issues 
 
 
 ## License
-This project is licensed under the MIT - see the LICENSE.md file for details.
+This project is licensed under the MIT - see the [LICENSE.md] file for details.
 
 Feel free to modify and expand upon this template to provide even more detailed information about your project.

@@ -14,7 +14,7 @@ const MyItem = () => {
     console.log(myAddedItem)
     useEffect(() => {
         const email = user.email;
-        const url = `https://gym-equipment-server-side.up.railway.app/addedProduct?email=${email}`;
+        const url = `https://gym-equipment-server-side1.vercel.app/addedProduct?email=${email}`;
 
         const getItem = async () => {
             try {

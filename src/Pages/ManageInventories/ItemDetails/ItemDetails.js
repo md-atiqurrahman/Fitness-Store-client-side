@@ -4,7 +4,7 @@ const ItemDetails = ({ product, setStoredProducts, storedProducts }) => {
     const { _id, count,  quantity, name } = product;
 
     const handleDelete = id => {
-        const url = `https://gym-equipment-server-side.up.railway.app/products/${id}`;
+        const url = `https://gym-equipment-server-side1.vercel.app/products/${id}`;
         fetch(url, {
             method: 'DELETE'
         })

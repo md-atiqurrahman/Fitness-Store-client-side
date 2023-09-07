@@ -32,7 +32,7 @@ const Login = () => {
     const onSubmit = async (data) => {
         const { email, password } = data;
         await signInWithEmailAndPassword(email, password);
-        const response = await axios.post('https://gym-equipment-server-side.up.railway.app/getToken',{email})
+        const response = await axios.post('https://gym-equipment-server-side1.vercel.app/getToken',{email})
         const {accessToken} = response.data;
         localStorage.setItem('accessToken',accessToken);
         reset();

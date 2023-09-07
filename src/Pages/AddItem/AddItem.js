@@ -11,7 +11,7 @@ const AddItem = () => {
 
     const onSubmit = data => {
 
-        const url = `https://gym-equipment-server-side.up.railway.app/products`;
+        const url = `https://gym-equipment-server-side1.vercel.app/products`;
         fetch(url,{
             method: 'POST',
             headers: {

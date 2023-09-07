@@ -5,7 +5,7 @@ const Item = ({ product, setMyAddedItem, myAddedItem }) => {
 
     const handleDelete = id => {
 
-        const url = `https://gym-equipment-server-side.up.railway.app/addedProduct/${id}`;
+        const url = `https://gym-equipment-server-side1.vercel.app/addedProduct/${id}`;
         fetch(url, {
             method: 'DELETE'
         })

@@ -70,6 +70,6 @@ Contributions and improvements to Fitness Store are welcome! If you find issues 
 
 
 ## License
-This project is licensed under the MIT - see the [LICENSE.md](LICENSE.md) file for details.
+This project is licensed under the [MIT](MIT) - see the [LICENSE.md](LICENSE.md) file for details.
 
 Feel free to modify and expand upon this template to provide even more detailed information about your project.
